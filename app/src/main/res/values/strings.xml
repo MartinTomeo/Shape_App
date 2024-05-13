@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ShapeApp</string>
+    <string name="Select">Select a Shape:</string>
+    <string name="Circle">Circle</string>
+    <string name="Rectangle">Rectangle</string>
+    <string name="Triangle">Triangle</string>
+    <string name="radius_hint">Radius in cm</string>
+    <string name="calculate_button">Submit</string>
+    <string name="back">Back</string>
+    <string name="invalid_radius">Invalid Radius</string>
+    <string name="radius_image">Invalid Radius</string>
+
+</resources>
