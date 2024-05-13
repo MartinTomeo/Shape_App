@@ -11,7 +11,7 @@ import androidx.cardview.widget.CardView
 //import com.example.shapeapp.R
 import kotlin.math.PI
 
-class CalculateActivity : AppCompatActivity() {
+class CircleActivity : AppCompatActivity() {
 
     private lateinit var radiusInput: EditText
     private lateinit var calculateButton: Button
@@ -33,7 +33,7 @@ class CalculateActivity : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calculate)
+        setContentView(R.layout.activity_circle)
 
         radiusInput = findViewById(R.id.radius_input)
         calculateButton = findViewById(R.id.calculate_button)

@@ -6,43 +6,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/azul4">
+    android:background="@color/azul4"
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/layout"
+        app:layout_constraintBottom_toTopOf="@+id/btnCircle"
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/Select"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        app:layout_constraintVertical_bias="0.8"/>
 
-    <LinearLayout
-        android:id="@+id/layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/main"
-        app:layout_constraintBottom_toBottomOf="@id/main"
-        android:orientation="vertical"
-        android:layout_marginVertical="2dp"
-        android:gravity="center">
 
-        <androidx.appcompat.widget.AppCompatButton
+
+        <Button
             android:id="@+id/btnCircle"
-            android:layout_width="150dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:text="@string/Circle"/>
+            android:text="@string/Circle"
+            app:layout_constraintTop_toTopOf="@id/main"
+            app:layout_constraintBottom_toTopOf="@id/btnRectangle"
+            app:layout_constraintEnd_toEndOf="@id/main"
+            app:layout_constraintStart_toStartOf="@id/main"
+            app:layout_constraintVertical_bias="1"
+            android:backgroundTint="@color/azul3"
+            />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="150dp"
+        <Button
+            android:id="@+id/btnRectangle"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:text="@string/Rectangle"/>
+            android:text="@string/Rectangle"
+            app:layout_constraintTop_toTopOf="@id/main"
+            app:layout_constraintBottom_toBottomOf="@id/main"
+            app:layout_constraintEnd_toEndOf="@id/main"
+            app:layout_constraintStart_toStartOf="@id/main"
+            android:backgroundTint="@color/azul3"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="150dp"
+        <Button
+            android:id="@+id/btnTriangle"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:text="@string/Triangle"/>
+            android:text="@string/Triangle"
+            app:layout_constraintTop_toBottomOf="@id/btnRectangle"
+            app:layout_constraintBottom_toBottomOf="@id/main"
+            app:layout_constraintEnd_toEndOf="@id/main"
+            app:layout_constraintStart_toStartOf="@id/main"
+            app:layout_constraintVertical_bias="0"
+            android:backgroundTint="@color/azul3"/>
 
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

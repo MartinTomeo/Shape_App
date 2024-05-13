@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".RectangleActivity"
+android:layout_gravity="center"
+android:background="@color/azul4">
+
+<Button
+    android:id="@+id/back_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:text="@string/back"
+    android:backgroundTint="@color/azul3"
+    />
+
+<EditText
+    android:id="@+id/length_edit_text"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:autofillHints="number"
+    android:hint="Hight"
+    app:layout_constraintBottom_toTopOf="@id/width_edit_text"
+    app:layout_constraintEnd_toEndOf="@+id/main"
+    app:layout_constraintStart_toStartOf="@+id/main"
+    app:layout_constraintTop_toTopOf="@+id/main"
+    app:layout_constraintVertical_bias="0.5"
+    android:inputType="number"/>
+
+<EditText
+    android:id="@+id/width_edit_text"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:autofillHints="Length"
+    android:hint="Length"
+    app:layout_constraintBottom_toTopOf="@id/calculate_button"
+    app:layout_constraintEnd_toEndOf="@+id/main"
+    app:layout_constraintStart_toStartOf="@+id/main"
+    app:layout_constraintTop_toBottomOf="@id/length_edit_text"
+    android:inputType="number"
+    />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        app:layout_constraintBottom_toTopOf="@id/area_text_view"
+        app:layout_constraintEnd_toEndOf="@+id/main"
+        app:layout_constraintStart_toStartOf="@+id/main"
+        app:layout_constraintTop_toBottomOf="@id/width_edit_text"
+        android:backgroundTint="@color/azul3"/>
+
+    <TextView
+    android:id="@+id/area_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="@+id/main"
+    app:layout_constraintEnd_toEndOf="@+id/main"
+    app:layout_constraintStart_toStartOf="@+id/main"
+    app:layout_constraintTop_toBottomOf="@id/calculate_button"/>
+
+
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

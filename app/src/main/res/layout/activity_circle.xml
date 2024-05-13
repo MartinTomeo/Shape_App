@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculateActivity"
+    tools:context=".CircleActivity"
     android:background="@color/azul4">
 
     <Button
@@ -23,13 +23,14 @@
         android:layout_height="50dp"
         android:hint="@string/radius_hint"
         android:textColorHint="@color/azul3"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         android:textColor="@color/azul3"
         app:layout_constraintBottom_toTopOf="@+id/calculate_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="false"/>
+        android:autofillHints="false"
+        />
 
     <Button
         android:id="@+id/calculate_button"
